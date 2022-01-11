@@ -229,12 +229,12 @@
 }
 @keyframes topwhite13 {  
     from {left: 10%; top: -10px}
-    66% {left: 10%; top: -10px}
-    to {left: 70%; top: -30px}
+    66% {left: 85%; top: -10px}
+    to {left: 85%; top: 60px}
     
 }
 @keyframes bottomwhite13 {  
-        from {right: 20%; bottom: -10px}
-        66% {right: 20%; bottom: -10px}
-        to {right: 70%; bottom: -30px}
+        from {right: 8%; bottom: -10px}
+        66% {right: 80%; bottom: -10px}
+        to {right: 80%; bottom: 50px}
 }
