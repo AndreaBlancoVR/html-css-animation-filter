@@ -168,7 +168,7 @@
     from {transform: rotate(0deg); }
     80% {transform: rotate(270deg); }
     to {transform: rotate(0deg); }
-
+}
 
 /* Esercizio 12 */
 
@@ -202,6 +202,39 @@
     height: 20px;
 }
 
+.well .ex-12-button:hover .ex-12-top-white {
+    animation: topwhite12 3s linear 0s infinite reverse forwards running;
+}
+.well .ex-12-button:hover .ex-12-bottom-white {
+    animation: bottomwhite12 3s linear 0s infinite reverse forwards running;
+}
+@keyframes topwhite12 {  
+    from {left: 10%; }
+    50% {left: 70%; }
+    to {left: 10%; }
+}
+@keyframes bottomwhite12 {  
+        from {right: 20%; }
+        50% {right: 69%; }
+        to {right: 20%; }
+}
+
 /* Esercizio 13 */
 
-
+.well .ex-13-button:hover .ex-13-top-white {
+    animation: topwhite13 3s linear 0s infinite normal forwards running;
+}
+.well .ex-13-button:hover .ex-13-bottom-white {
+    animation: bottomwhite13 3s linear 0s infinite normal forwards running;
+}
+@keyframes topwhite13 {  
+    from {left: 10%; top: -10px}
+    66% {left: 10%; top: -10px}
+    to {left: 70%; top: -30px}
+    
+}
+@keyframes bottomwhite13 {  
+        from {right: 20%; bottom: -10px}
+        66% {right: 20%; bottom: -10px}
+        to {right: 70%; bottom: -30px}
+}
