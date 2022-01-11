@@ -47,7 +47,9 @@
     width: 100px;
     height: 100px;
     background: red;
-    animation: disappear 3s linear 0s 1 normal none running;
+}
+.ex-4-square:hover{
+    animation: disappear 3s linear 0s 1 normal forwards running;
 }
 
 @keyframes disappear {
@@ -66,11 +68,11 @@
 }
 
 .ex-5-square:hover {
-    animation: bigger5 3s linear 0s 1 normal none running;
+    animation: bigger5 3s linear 0s 1 normal forwards running;
 }
 
 .ex-5-square:active {
-    animation: smaller5 3s linear 0s 1 normal none running;
+    animation: smaller5 3s linear 0s 1 normal forwards running;
 }
 
 @keyframes bigger5 {
@@ -90,18 +92,49 @@
     width: 500px;
 }
 
+.well .ex-6-img:hover {
+    filter: grayscale(100%);
+}
 
 /* Esercizio 7 */
 
+.well .ex-7-img:hover {
+    animation: immagine7 3s linear 0s 1 normal forwards running;
+    filter: grayscale(0%);
+}
+
+@keyframes immagine7 {
+    from {filter: grayscale(0%); border: 10px solid black }
+    to {filter: grayscale(100%); border: 15px solid white}
+}
 
 /* Esercizio 8 */
 
+.well .ex-8-img:hover {
+    animation: immagine8 3s linear 0s 1 normal forwards running;
+    filter: blur(10px);
+}
+
+@keyframes immagine8 {
+    from {filter: blur(10px) invert(0%);  border-radius: 0%; }
+    to {filter: blur(0px)  invert(100%); border-radius: 15% }
+}
 
 /* Esercizio 9 */
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+}
+
+.well .ex-9-img:hover {
+    animation: immagine9 3s linear 0s 1 normal forwards running;
+    filter: opacity(0%);
+}
+
+@keyframes immagine9 {
+    from {filter: opacity(0%); border: 10px solid transparent; border-radius: 0%; transform: scale(1) }
+    to {filter: opacity(100%); border: 15px solid greenyellow; border-radius: 50%; transform: scale(1.5) }
 }
 
 
@@ -111,12 +144,30 @@
     font-size: 60px;
 }
 
+.well .ex-10-icon:hover {
+    animation: icona10 3s linear 0s infinite normal forwards running;
+}
+
+@keyframes icona10 {  
+    from {transform: rotate(0deg); }
+    to {transform: rotate(359deg); }
+}
+
 
 /* Esercizio 11 */
 
 .ex-11-icon {
     font-size: 60px;
 }
+
+.well .ex-11-icon:hover {
+    animation: icona11 3s linear 0s infinite normal forwards running;
+}
+
+@keyframes icona11 {  
+    from {transform: rotate(0deg); }
+    80% {transform: rotate(270deg); }
+    to {transform: rotate(0deg); }
 
 
 /* Esercizio 12 */
